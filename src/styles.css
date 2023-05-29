@@ -7,3 +7,12 @@
 .box2{
     box-shadow: 0px 0px 0px 31px rgba(254,126,65,0.75);
 }
+.bar:active .bar2{
+    opacity: 0;
+}
+.bar:active .bar1{
+    transform: rotate(45deg) translateY(8px);
+}
+.bar:active .bar3{
+    transform: rotate(-45deg) translateY(-8px);
+}

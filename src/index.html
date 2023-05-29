@@ -5,23 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tailwind</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body class="bg-[#050247]">
-    <nav class="md:flex md:justify-between md:items-center sm:block py-[15px] px-[8%] font-medium ">
+    <nav class="flex justify-between items-center py-[15px] px-[8%] font-medium ">
         <div class="flex flex-col items-center">
             <img class="w-[50px]" src="./images/logo.png" alt="logo"/>
             <h5 class="text-[0.9rem] text-[#fff]" font-extralight><span class="font-black">skills</span>club</h5>
         </div>
-        <div class="navbar-list">
+        <div class="hidden md:block">
             <ul class="flex gap-6 capitalize ml-[20%] md:ml-[0] text-[#8686A9]" >
                 <li class="duration-500 cursor-pointer sm:text-[1.1rem] text-[.8rem] hover:text-[#fff]">our stories</li>
                 <li class="duration-500 cursor-pointer sm:text-[1.1rem] text-[.8rem] hover:text-[#fff]">project</li>
                 <li class="duration-500 cursor-pointer sm:text-[1.1rem] text-[.8rem] hover:text-[#fff]">resourse</li>
                 <li class="duration-500 cursor-pointer sm:text-[1.1rem] text-[.8rem] hover:text-[#fff]">contact</li>
             </ul>
+        </div>
+        <div class="md:hidden block">
+            <i class="fa-solid fa-bars  text-white text-[2rem] transition-[0.5s] hover:rotate-90 cursor-pointer"></i>
+            <i class="fa-solid fa-xmark text-white text-[2rem] hidden transition-[0.5s] hover:rotate-45 cursor-pointer"></i>
         </div>
     </nav>
 <!---------------------------------hero Section Starts----------------------------------->
@@ -49,18 +54,18 @@
         <div class="text-center pt-[4%] pb-[2%]">
             <h1 class=" text-[2rem]">Our Capabilities</h1>
         </div>
-        <div class="py-[4%] flex justify-between items-center">
-            <div class="flex items-center justify-between">
+        <div class="py-[4%] flex justify-between items-center flex-wrap text-center">
+            <div class="flex items-center mb-[2%]">
                 <img src="./images/Icon.png" alt="">
                 <h3 class="px-[15px] text-[1.3rem] capitalize">Impactful</h3>
             </div>
-            <div class="w-[20px] h-[3px] bg-[#1e1b59]"></div>
-            <div class="flex items-center">
+            <div class="w-[20px] h-[3px] bg-[#1e1b59] hidden lg:block"></div>
+            <div class="flex items-center mb-[2%]">
                 <img src="./images/icon2.png" alt="">
                 <h3 class="px-[10px] text-[1.3rem] capitalize">multiple startups</h3>
             </div>
-            <div class="w-[20px] h-[3px] bg-[#1e1b59]"></div>
-            <div class="flex items-center">
+            <div class="w-[20px] h-[3px] bg-[#1e1b59] hidden lg:block"></div>
+            <div class="flex items-center mb-[2%]">
                 <img src="./images/icon3.png" alt="">
                 <h3 class="px-[10px] text-[1.3rem] capitalize">tech driven</h3>
             </div>
@@ -70,16 +75,16 @@
 <!---------------------------------Cap Section Ends----------------------------------->
 <!---------------------------------Project Section Starts----------------------------------->
     <section class="px-[8%] text-white text-center">
-        <div class="flex justify-between items-center pb-[4%] text-left">
+        <div class="block md:flex justify-between items-center pb-[4%] text-left">
             <div>
-                <h1 class="text-white text-[3.3rem] font-normal">Our work<br/> speaks for itself</h1>
+                <h1 class="text-white text-[2.3rem] md:text-[3.3rem] font-normal">Our work<br/> speaks for itself</h1>
             </div>
             <div>
                 <li class="text-[#e87341] list-disc text-[1rem] py-[2%]">all projects</li>
-                <p class="text-white w-[50%] font-thin text-[1.1rem]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="text-white w-[100%] md:w-[50%] font-thin text-[1.1rem]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             </div>
         </div>
-        <div class="flex justify-between flex-wrap text-white py-[6%] text-left">
+        <div class="flex justify-between flex-wrap text-white py-[6%] text-left md:ml-[0] sm:ml-[25%] ml-[10%]">
             <div class="w-[350px] my-[4%] lg:my-[0]">
                 <img class="w-[320px]" src="./images/project.png" alt="">
                 <h5 class="pt-[4%]">SkillsClub</h5>
@@ -103,11 +108,11 @@
 <!---------------------------------Works Section Starts----------------------------------->
     <section class="px-[8%] text-white py-[4%]">
         <div class="text-white text-center py-[4%]">
-            <h1 class="text-[3.3rem] pb-[4%]">Working process</h1>
-            <p class="w-[60%] mx-[20%] text-[1.1rem] font-thin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minus voluptas iste quod excepturi quo ducimus harum totam voluptate ex.</p>
+            <h1 class="text-white text-[2.3rem] md:text-[3.3rem] font-normal">Working process</h1>
+            <p class="w-[80%] mx-[10%] md:w-[60%] md:mx-[20%] text-[0.9rem] md:text-[1.1rem] font-thin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minus voluptas iste quod excepturi quo ducimus harum totam voluptate ex.</p>
         </div>
-        <div class="flex flex-wrap justify-between items-center text-center">
-            <div class="bg-[#1e1b59] w-[330px] flex flex-col items-center py-[25px] rounded  my-[4%] lg:my-[0]">
+        <div class="flex flex-wrap justify-between items-center text-center md:ml-[0] sm:ml-[25%] ml-[10%]">
+            <div class="bg-[#1e1b59] w-[330px] flex flex-col items-center py-[25px] rounded  my-[4%]">
                 <div class="bg-[#a29eb3] w-[70px] h-[70px] rounded-full flex justify-center items-center">
                     <h1 class="text-white font-medium text-[1.4rem]">01</h1>
                 </div>
@@ -138,10 +143,10 @@
     <section class="px-[8%] py-[4%] text-[#fff]">
         <img src="./images/border.png" alt=""/>
         <div>
-            <div class="flex items-center justify-between py-[6%]">
-            <h1 class="text-[3.3rem] pb-[4%]">Some of the brands <br/> we have worked with 
+            <div class="block md:flex items-center justify-between py-[6%]">
+            <h1 class="text-white text-[2.3rem] md:text-[3.3rem] font-normal">Some of the brands <br/> we have worked with 
             </h1>
-            <p class="w-[40%] font-thin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, placeat ab commod</p>
+            <p class="w-[100%] md:w-[40%] font-thin">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, placeat ab commod</p>
             </div>
             <div>
             </div>
@@ -155,18 +160,18 @@
 <!---------------------------------Client Section Ends---------------------------------->
 <!---------------------------------Reviews Section Starts---------------------------------->
 
-    <section class="px-[8%] py-[4%]">
+    <section class="px-[8%]">
         <div class="text-white text-center py-[4%]">
-            <h1 class="text-[3.3rem] pb-[4%]">Clients sweet words</h1>
-            <p class="w-[60%] mx-[20%] text-[1.1rem] font-thin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minus voluptas iste quod excepturi quo ducimus harum totam voluptate ex.</p>
+            <h1 class="text-white text-[2.3rem] md:text-[3.3rem] font-normal">Clients sweet words</h1>
+            <p class="w-[80%] mx-[10%] md:w-[60%] md:mx-[20%] text-[0.9rem] md:text-[1.1rem] font-thin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minus voluptas iste quod excepturi quo ducimus harum totam voluptate ex.</p>
         </div>
-        <div class="flex justify-center w-[90%] mx-[5%] mt-[5%]">
-            <div class="box w-[450px] bg-white p-[35px] mx-[5%]">
+        <div class="flex flex-wrap justify-between mt-[100px] px-[10%] md:ml-[20%] lg:ml-[0]">
+            <div class="box w-[400px] bg-white p-[35px] mb-[100px]">
                 <div class="flex items-center pb-[5%]">
                     <h3 class="text-[#fe7e41] uppercase text-[0.8rem] mr-[25px]">seo managment</h3>
                     <img src="./images/dash.png" alt="">
                 </div>
-                <p class="text-[1.3rem] mb-[8%]">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, eos pariatur? Animi, repellendus quidem? Accusantium voluptatum nesciunt enim!"</p>
+                <p class="text-[0.9rem] md:text-[1.3rem] mb-[8%]">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, eos pariatur? Animi, repellendus quidem? Accusantium voluptatum nesciunt enim!"</p>
                 <div class="flex items-center justify-between">
                     <img class="w-[30px]" src="./images/google.png" alt="">
                     <h4 class="text-[0.9rem] text-gray-400">A 5.00</h4>
@@ -174,47 +179,50 @@
                     <h4 class="text-[0.9rem] text-gray-400">reviews from Elia Joe</h4>
                 </div>
             </div>
-            <div class="box2 w-[450px] bg-white p-[35px] mx-[5%]">
+            <div class="box2 w-[400px] bg-white p-[35px] mb-[100px]">
                 <div class="flex items-center pb-[5%]">
                     <h3 class="text-[#fe7e41] uppercase text-[0.8rem] mr-[25px]">seo managment</h3>
                     <img src="./images/dash.png" alt="">
                 </div>
-                <p class="text-[1.3rem] mb-[8%]">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, eos pariatur? Animi, repellendus quidem? Accusantium voluptatum nesciunt enim!"</p>
+                <p class="text-[0.9rem] md:text-[1.3rem] mb-[8%]">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, eos pariatur? Animi, repellendus quidem? Accusantium voluptatum nesciunt enim!"</p>
                 <div class="flex items-center justify-between">
                     <img class="w-[30px]" src="./images/google.png" alt="">
                     <h4 class="text-[0.9rem] text-gray-400">A 5.00</h4>
                     <img src="./images/stars.png" alt="">
                     <h4 class="text-[0.9rem] text-gray-400">reviews from Elia Joe</h4>
                 </div>
+            </div>
             </div>
         </div>
     </section>
 <!---------------------------------Reviews Section Ends---------------------------------->
 <!---------------------------------Team Section Starts---------------------------------->
-    <section class="px-[8%] py-[6%] text-white">
-        <div class="py-[4%]">
-            <h1 class="text-[3.3rem]">We are a digital marketing <br/>
+    <section class="px-[8%] py-[4%] text-white text-center md:text-left">
+        <div class="">
+            <h1 class="text-white text-[2.3rem] md:text-[3.3rem] font-normal">We are a digital marketing <br/>
             agency, helping companies <br/>
             grow better.</h1>
         </div>
         <div class="flex justify-between items-center">
-            <div class="w-[50%]">
+            <div class="lg:w-[50%] md:w-[65%]">
                 <p class="font-thin my-[25px] text-[1.2rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus vitae aut quo deleniti. Illum harum iusto reiciendis quisquam hic sapiente necessitatibus iste eum incidunt labore vel temporibus nesciunt, repellendus aspernatur!</p>
                 <p class="font-thin my-[25px] text-[1.2rem]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quibusdam possimus similique fuga dolorem quasi.</p>
                 <p class="font-thin my-[25px] text-[1.2rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, distinctio voluptate alias illo incidunt ipsa iure modi est magni corporis. Fuga dolorum explicabo sit fugit!</p>
                 <button class="duration-500  uppercase border-white border-[1px] py-[12px] text-[1.1rem] px-[35px] rounded font-thin
                 hover:border-[#fe7e41] hover:text-[#fe7e41] my-[4%]">our story</button>
+                </div>
+                <div  class="hidden md:block">
+                    <img class="sm:w-[300px] md:w-[400px] lg:w-[550px]" src="./images/team.png" alt="">
+                </div>
             </div>
-            <div><img class="w-[550px]" src="./images/team.png" alt=""></div>
-        </div>
     </section>
 <!---------------------------------Team Section Ends---------------------------------->
 <!---------------------------------Togetter Section starts----------------------------->
     <section class="py-[2%] px-[8%]">
         <img src="./images/border.png" alt="">
         <div class="text-white text-center py-[4%]">
-            <h1 class="text-[3.3rem] pb-[2%]">Working process</h1>
-            <p class="w-[60%] mx-[20%] text-[1.1rem] font-thin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minus voluptas iste quod excepturi quo ducimus harum totam voluptate ex.</p>
+            <h1 class="text-white text-[2.3rem] md:text-[3.3rem] font-normal">Working process</h1>
+            <p class="w-[80%] mx-[10%] md:w-[60%] md:mx-[20%] text-[0.9rem] md:text-[1.1rem] font-thin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minus voluptas iste quod excepturi quo ducimus harum totam voluptate ex.</p>
         </div>
         <div class="flex justify-center items-center pb-[4%]">
             <div class="duration-500 rounded-full border border-gray-500 w-[100px] h-[100px] flex justify-center items-center cursor-pointer hover:bg-gray-500">
@@ -225,13 +233,13 @@
     </section>
 <!---------------------------------Togetter Section Ends------------------------------>
     <section class="px-[8%] py-[3%] text-white">
-        <div class="flex pb-[3%]">
-            <div class="w-[40%]">
+        <div class="block md:flex pb-[3%]">
+            <div class="md:w-[40%] md:mb-[0] mb-[4%]">
                 <img src="./images/logo2.png" alt="">
                 <h4 class="text-[#fff] opacity-50 text-[0.8rem]">DM US</h4>
                 <h2 class="underline text-[1.8rem] cursor-pointer hover:opacity-50">Info@Skillsclub.com</h2>
             </div>
-            <div class="flex justify-between w-[60%]">
+            <div class="block sm:flex justify-between md:w-[60%]">
                 <div>
                     <ul>
                         <li class="py-[2%] text-[1.2rem] capitalize text-orange-500 hover:opacity-50 cursor-pointer">our stories</li>
@@ -264,5 +272,6 @@
             <h4 class="text-[#fff] opacity-50 text-[0.8rem]">©SkillsClub 2022. All rights reserved.</h4>
         </div>
     </section>
+    <script src="./index.js"></script>
 </body>
 </html>
